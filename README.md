@@ -45,7 +45,7 @@ python main_lincls.py \
   --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0 \
   --pretrained [your checkpoint path]/checkpoint_0099.pth.tar \
   --lars \
-  [your imagenet-folder with train and val folders]
+  [your imagenet-folder with train and val folders] --class_num [your datasets classes]
 ```
 
 The above command uses LARS optimizer and a default batch size of 4096.
